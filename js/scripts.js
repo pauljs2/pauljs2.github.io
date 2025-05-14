@@ -7,7 +7,7 @@
 // Scripts
 //
 const image = document.getElementById('circle-image');
-var audio = new Audio('assets/mp3/sonicRing.mp3')
+var audio = new Audio('assets/mp3/sonicRing2.mp3')
 let isAnimating = false;
 
 image.addEventListener('click', ()=> {
