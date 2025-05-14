@@ -5,7 +5,25 @@
 */
 //
 // Scripts
-// 
+//
+const image = document.getElementById('circle-image');
+var audio = new Audio('assets/mp3/sonicRing.mp3')
+let isAnimating = false;
+
+image.addEventListener('click', ()=> {
+
+    if (!isAnimating) {
+    isAnimating = true;
+    image.classList.add('spinning-image');
+    audio.currentTime=0;
+    audio.play();
+    setTimeout(()=> {
+        image.classList.remove('spinning-image');
+        isAnimating=false;
+    },1000);
+    }
+})
+
 
 window.addEventListener('DOMContentLoaded', event => {
 
