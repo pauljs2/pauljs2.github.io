@@ -13,8 +13,11 @@
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
-        <!-- Core theme CSS (includes Bootstrap)-->
+        <!-- Core theme CSS-->
         <link href="css/styles.css" rel="stylesheet" />
+        <audio id="myAudio">
+        <source src="assets/mp3/sonicRing.mp3" type="audio/mpeg">
+        </audio>    
     </head>
     <body id="page-top">
         <!-- Navigation-->
@@ -38,7 +41,9 @@
         <header class="masthead bg-primary text-white text-center">
             <div class="container d-flex align-items-center flex-column">
                 <!-- Masthead Avatar Image-->
-                <img class="img" src="assets/img/portfolio/PAUL.jpg" alt="Pual Photo" style="width:400px;height:400px;" id="circle-image"/>
+                <div class="circle-border">
+                <img class="img" src="assets/img/portfolio/pual2.jpg" alt="Paul Photo" style="width:400px;height:400px;" id="circle-image"/>
+                </div>
                 <!-- Masthead Heading-->
                 <h1 class="masthead-heading text-uppercase mb-0">Hello, my name is Paul!!</h1>
                 <!-- Icon Divider-->
@@ -70,7 +75,7 @@
                             <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100">
                                 <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
                             </div>
-                            <img class="img-fluid" src="/assets/img/portfolio/CWLogo.png" alt="CougarWatch Logo" />
+                            <img class="img-fluid" src="assets/img/portfolio/CWLogo.png" alt="CougarWatch Logo" />
                         </div>
                     </div>
                     <!-- Portfolio Item 2>
@@ -239,7 +244,7 @@
                     <div class="col-lg-4">
                         <h4 class="text-uppercase mb-4">I also have ko-fi!</h4>
                         <p class="lead mb-0">
-                            <a href="https://ko-fi.com/pauljs2"><img src="/assets/img/portfolio/support_me_on_kofi_dark.png" alt="Support me on ko-fi!" style="width:327px;height:66px;"></a> 
+                            <a href="https://ko-fi.com/pauljs2" target="_blank"><img src="assets/img/portfolio/support_me_on_kofi_dark.png" alt="Support me on ko-fi!" style="width:327px;height:66px;"></a> 
                         </p>
                     </div>
                 </div>
@@ -268,7 +273,7 @@
                                         <div class="divider-custom-line"></div>
                                     </div>
                                     <!-- Portfolio Modal - Image-->
-                                    <img class="img-fluid rounded mb-5" src="/assets/img/portfolio/CWLogo.png" alt="..." />
+                                    <img class="img-fluid rounded mb-5" src="assets/img/portfolio/CWLogo.png" alt="..." />
                                     <!-- Portfolio Modal - Text-->
                                     <p class="mb-4">CougarWatch is the name of the senior project that I and four others worked on together. We created a functional antivirus featuring both heuristic and hash-based detection, functional user sign-in, and an interactive gui.</p>
                                     <button class="btn btn-primary" data-bs-dismiss="modal">
