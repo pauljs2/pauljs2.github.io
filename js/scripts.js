@@ -100,6 +100,7 @@ textbox.addEventListener('input', ()=>{
     
 })
 
+if(image){
 image.addEventListener('click', ()=> {
 
     if (!isAnimating) {
@@ -113,6 +114,7 @@ image.addEventListener('click', ()=> {
     },1000);
     }
 })
+}
 
 function hasRepeats (str) {
     return /(.)\1{2,}/.test(str);
