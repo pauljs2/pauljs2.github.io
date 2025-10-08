@@ -1,0 +1,100 @@
+:root{
+  --strength-color: #f7f7f7;  /*Changes based on password strength*/
+  --card-bg: rgba(255,255,255,0.95);
+  --text-color: #222;
+  --max-width: 880px;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: var(--strength-color);
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 48px;
+  box-sizing: border-box;
+}
+
+.container {
+  width: min(var(--max-width), 96%);
+  background: var(--card-bg);
+  padding: 36px 42px;
+  border-radius: 16px;
+  box-shadow: 0 12px 40px rgba(0,0,0,0.12);
+  box-sizing: border-box;
+  color: var(--text-color);
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 12px;
+  font-size: 22px;
+}
+
+input[type="password"],
+input[type="text"] {
+  width: 100%;
+  font-size: 22px;
+  padding: 16px 14px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin-bottom: 14px;
+  font-family: inherit;
+  height: 56px;
+}
+
+.show-pass {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.strength-meter {
+  width: 100%;
+  height: 20px;
+  background-color: rgba(0,0,0,0.06);
+  border-radius: 12px;
+  overflow: hidden;
+  margin-bottom: 18px;
+  box-shadow: inset 0 -1px 0 rgba(255,255,255,0.2);
+}
+
+#strength-bar {
+  height: 100%;
+  width: 0%;
+  background: var(--strength-color);
+  border-radius: 12px;
+  transition: width 350ms cubic-bezier(.2,.9,.3,1), background 250ms ease;
+}
+
+#PassAnalCont {
+  margin-top: 6px;
+  font-size: 18px;
+  color: #222;
+  min-height: 48px;
+}
+
+@media (max-width: 520px) {
+  .container {
+    padding: 20px;
+    font-size: 18px;
+  }
+  label { font-size: 18px; }
+  input[type="password"], input[type="text"] { font-size: 18px; height: 48px; padding: 12px; }
+  .strength-meter { height: 16px; }
+  #strength-bar { border-radius: 8px; }
+}
