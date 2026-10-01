@@ -1,6 +1,5 @@
 import { COMMON_PASS } from "./commonPass.js";
 const textbox = document.getElementById("pwd");
-
 const strengthBar=document.getElementById("strength-bar");
 const showBox = document.getElementById("showBox");
 
@@ -111,9 +110,9 @@ function checkCommonPass(str){
 }
 
 function findScoreColor(score, pass) {
-  if (pass.value.length === 0) return "#f7f7f7";        // neutral / empty
-  if (score < 50) return "#e74c3c";         // red
-  if (score < 70) return "#f1c40f";         // yellow (warm)
-  if (score < 90) return "#3498db";         // blue
-  return "#2ecc71";                         // green
+  if (pass.value.length === 0) return "#f7f7f7";
+  if (score < 50) return "#e74c3c";
+  if (score < 70) return "#f1c40f";
+  if (score < 90) return "#3498db";
+  return "#2ecc71";
 }
